@@ -69,6 +69,9 @@ fun buildNavHost(controller: NavHostController) {
         composable(PAGE6){
             canvasDRawScope()
         }
+        composable(PAGE7){
+            canvasDrawEllipse()
+        }
     }
 }
 
@@ -80,7 +83,8 @@ fun Home(controller: NavHostController) {
             ItemData(title = "画多个点", tag = PAGE3),
             ItemData(title = "画线", tag = PAGE4),
             ItemData(title = "画路径path", tag = PAGE5),
-            ItemData(title = "画过程中进行转换",tag = PAGE6)
+            ItemData(title = "画过程中进行转换",tag = PAGE6),
+            ItemData(title = "绘制椭圆",tag = PAGE7)
         )
     }
     ListView(datas = datas, click = { itemData: ItemData, _, _ ->
